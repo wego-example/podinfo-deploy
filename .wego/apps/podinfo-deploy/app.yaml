@@ -3,6 +3,9 @@ apiVersion: wego.weave.works/v1alpha1
 kind: Application
 metadata:
   name: podinfo-deploy
+  namespace: wego-system
+  labels:
+    weave-gitops.weave.works/app-identifier: wego-ab4a4570999c4b60a8f2466fae27e480
 spec:
   path: ./
   url: ssh://git@github.com/davidstauffer/podinfo-deploy.git
