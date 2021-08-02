@@ -4,15 +4,15 @@ metadata:
   name: frontend
   namespace: test
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: frontend
   ports:
     - name: http
       port: 9898
       protocol: TCP
-      targetPort: http
-    - port: 9999
-      targetPort: grpc
-      protocol: TCP
-      name: grpc
+      targetPort: 80
+#     - port: 9999
+#       targetPort: grpc
+#       protocol: TCP
+#       name: grpc
