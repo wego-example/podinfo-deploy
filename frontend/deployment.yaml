@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: stefanprodan/podinfo:5.2.1
+        image: stefanprodan/podinfo:6.0.0
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
@@ -45,6 +45,7 @@ spec:
         - --level=info
         - --random-delay=false
         - --random-error=false
+        - --ui-logo=https://github.com/wego-example/podinfo-deploy/raw/logo/weaveicon.png
         env:
         - name: PODINFO_UI_COLOR
           value: "#34577c"
