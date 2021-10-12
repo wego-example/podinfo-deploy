@@ -23,10 +23,20 @@ spec:
       labels:
         app: frontend
     spec:
+      securityContext:
+        runAsUser: 65534
+        runAsGroup: 65534
+        fsGroup: 65534
+        runAsNonRoot: true
       containers:
       - name: frontend
         image: stefanprodan/podinfo:5.2.1
         imagePullPolicy: IfNotPresent
+        securityContext:
+          runAsUser: 65534
+          runAsGroup: 65534
+          allowPrivilegeEscalation: false
+          runAsNonRoot: true        
         ports:
         - name: http
           containerPort: 9898
