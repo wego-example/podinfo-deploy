@@ -1,3 +1,4 @@
+name: Magalix
 on:
   push:
     branches: [ main ]
