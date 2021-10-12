@@ -1,11 +1,9 @@
 name: Magalix
-
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
 jobs:
   magalix:
     runs-on: ubuntu-latest
