@@ -24,17 +24,17 @@ spec:
         app: frontend
     spec:
       securityContext:
-        runAsUser: 99
-        runAsGroup: 99
-        fsGroup: 99
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
         runAsNonRoot: true
       containers:
       - name: frontend
         image: stefanprodan/podinfo:5.2.1
         imagePullPolicy: IfNotPresent
         securityContext:
-          runAsUser: 99
-          runAsGroup: 99
+          runAsUser: 1000
+          runAsGroup: 1000
           allowPrivilegeEscalation: false
           runAsNonRoot: true        
         ports:
