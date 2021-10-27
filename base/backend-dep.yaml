@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend
-  namespace: test
 spec:
   minReadySeconds: 3
   revisionHistoryLimit: 5

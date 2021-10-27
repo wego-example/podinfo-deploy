@@ -2,18 +2,17 @@ apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
   name: backend
-  namespace: test
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
     name: backend
-  minReplicas: 1
-  maxReplicas: 4
+  minReplicas: 3
+  maxReplicas: 6
   metrics:
   - type: Resource
     resource:
       name: cpu
       # scale up if usage is above
       # 99% of the requested CPU (100m)
-      targetAverageUtilization: 99
+      targetAverageUtilization: 80
