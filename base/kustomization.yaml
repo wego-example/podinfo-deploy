@@ -7,4 +7,3 @@ resources:
 - frontend-svc.yaml
 - backend-dep.yaml
 - backend-svc.yaml
-- backend-hpa.yaml

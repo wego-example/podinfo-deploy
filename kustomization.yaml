@@ -5,5 +5,3 @@ bases:
 - base
 resources:
 - namespace.yaml
-- frontend-canary.yaml
-- backend-canary.yaml
