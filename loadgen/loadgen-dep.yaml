@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: podinfo-loadgen
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: podinfo-loadgen
+  template:
+    metadata:
+      labels:
+        app: podinfo-loadgen
+    spec:
+      containers:
+      - name: podinfo-loadgen
+        image: steveww/podinfo-loadgen:latest
+        env:
+        - name: LOAD_URL_BASE
+          value: http://frontend.podinfo:9898
