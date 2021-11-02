@@ -3,5 +3,5 @@ kind: Namespace
 metadata:
   name: podinfo
   annotations:
-    linkerd.io/inject: enable
+    linkerd.io/inject: enabled
   
