@@ -46,7 +46,7 @@ spec:
         - --random-delay=true
         - --random-delay-unit=ms
         - --random-delay-min=100
-        - --random-delay-max=500
+        - --random-delay-max=200
         - --random-error=false
         - --ui-logo=https://github.com/wego-example/podinfo-deploy/raw/logo/weaveicon.png
         env:
