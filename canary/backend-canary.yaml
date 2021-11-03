@@ -3,6 +3,8 @@ kind: Canary
 metadata:
   name: backend
 spec:
+  # rollback if not finished in time
+  progressDeadlineSeconds: 300
   targetRef:
     apiVersion: apps/v1
     kind: Deployment
@@ -10,16 +12,17 @@ spec:
   service:
     port: 9898
   analysis:
-    interval: 1m
-    threshold: 10
+    interval: 30s
+    threshold: 3
     maxWeight: 50
     stepWeight: 5
     metrics:
     - name: request-success-rate
       thresholdRange:
         min: 99
-      interval: 1m
+      interval: 10s
     - name: request-duration
       thresholdRange:
-        max: 200
-      interval: 1m
+        # P99 request time (ms)
+        max: 250
+      interval: 10s
