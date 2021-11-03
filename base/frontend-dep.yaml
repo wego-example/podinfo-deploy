@@ -38,7 +38,7 @@ spec:
           protocol: TCP
         command:
         - ./podinfo
-        - --backend-url=http://backend:9898/
+        - --backend-url=http://backend:9898/echo
         - --port=9898
         - --port-metrics=9797
         - --grpc-port=9999
