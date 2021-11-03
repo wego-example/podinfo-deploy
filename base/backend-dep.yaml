@@ -47,11 +47,11 @@ spec:
         - --random-delay-unit=ms
         - --random-delay-min=100
         - --random-delay-max=200
-        - --random-error=true
+        - --random-error=false
         - --ui-logo=https://github.com/wego-example/podinfo-deploy/raw/logo/weaveicon.png
         env:
         - name: PODINFO_UI_COLOR
-          value: "#34577c"
+          value: "#252525"
         livenessProbe:
           exec:
             command:
