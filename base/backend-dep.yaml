@@ -47,7 +47,7 @@ spec:
         - --random-delay-unit=ms
         - --random-delay-min=100
         - --random-delay-max=200
-        - --random-error=false
+        - --random-error=true
         - --ui-logo=https://github.com/wego-example/podinfo-deploy/raw/logo/weaveicon.png
         env:
         - name: PODINFO_UI_COLOR
