@@ -26,3 +26,14 @@ spec:
         # P99 request time (ms)
         max: 250
       interval: 10s
+    webhooks:
+    - name: load-test
+      type: rollout
+      url: http://loadtester.loadtest/
+      metadata:
+        cmd: "hey -z 30s -q 4 -c 2 http://backend-canary.podinfo:9898/"
+    - name: events
+      type: event
+      url: http://webhook.default/webhook
+      metadata:
+        app: frontend
