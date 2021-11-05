@@ -20,12 +20,12 @@ spec:
     - name: request-success-rate
       thresholdRange:
         min: 99
-      interval: 10s
+      interval: 1m
     - name: request-duration
       thresholdRange:
         # P99 request time (ms)
         max: 250
-      interval: 10s
+      interval: 1m
     webhooks:
     - name: load-test
       type: rollout
