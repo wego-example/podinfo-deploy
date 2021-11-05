@@ -50,7 +50,7 @@ spec:
         - name: PODINFO_UI_COLOR
           value: "#34577c"
         - name: FOO
-          value: bar
+          value: foo
         livenessProbe:
           exec:
             command:
