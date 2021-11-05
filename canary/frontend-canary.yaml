@@ -12,6 +12,7 @@ spec:
   service:
     port: 9898
   analysis:
+    # How often the canary is evaluated
     interval: 1m
     threshold: 5
     maxWeight: 50
@@ -20,11 +21,13 @@ spec:
     - name: request-success-rate
       thresholdRange:
         min: 99
+      # duration for metric query
       interval: 1m
     - name: request-duration
       thresholdRange:
         # P99 request time (ms)
         max: 250
+      # duration for metric query
       interval: 1m
     webhooks:
     - name: load-test
