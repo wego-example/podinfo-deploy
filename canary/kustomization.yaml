@@ -1,9 +1,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: podinfo
-bases:
-- ../base
+# Flagger creates services
+# HPA are needed repicas can not be used with Flagger
 resources:
+- ../base
 - namespace.yaml
+- frontend-hpa.yaml
+- backend-hpa.yaml
 - frontend-canary.yaml
 - backend-canary.yaml
