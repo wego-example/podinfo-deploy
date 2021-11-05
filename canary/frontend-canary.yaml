@@ -12,8 +12,8 @@ spec:
   service:
     port: 9898
   analysis:
-    interval: 30s
-    threshold: 3
+    interval: 1m
+    threshold: 5
     maxWeight: 50
     stepWeight: 5
     metrics:

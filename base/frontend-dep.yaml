@@ -49,7 +49,7 @@ spec:
         env:
         - name: PODINFO_UI_COLOR
           value: "#34577c"
-        - name: FOO
+        - name: FOOBAR
           value: foo
         livenessProbe:
           exec:
