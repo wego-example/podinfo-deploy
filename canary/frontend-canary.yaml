@@ -14,9 +14,9 @@ spec:
   analysis:
     # How often the canary is evaluated
     interval: 1m
-    threshold: 5
+    threshold: 3
     maxWeight: 50
-    stepWeight: 5
+    stepWeight: 10
     metrics:
     - name: request-success-rate
       thresholdRange:
@@ -32,7 +32,7 @@ spec:
     webhooks:
     - name: load-test
       type: rollout
-      url: http://loadtester.loadtest/
+      url: http://loadtester.loadgen/
       metadata:
         cmd: "hey -z 1m -q 10 -c 2 http://frontend-canary.podinfo:9898/"
     - name: events
