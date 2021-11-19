@@ -15,7 +15,7 @@ spec:
     # How often the canary is evaluated
     interval: 1m
     threshold: 3
-    maxWeight: 50
+    maxWeight: 30
     stepWeight: 10
     metrics:
     - name: request-success-rate
