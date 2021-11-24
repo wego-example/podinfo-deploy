@@ -33,7 +33,7 @@ esac
 
 NAME="podinfo-$STAGE"
 
-gitops app add \
+gitops add app \
     --app-config-url git@github.com:steveww/gitops \
     --url git@github.com:steveww/podinfo-deploy \
     --path $STAGE \
