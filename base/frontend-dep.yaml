@@ -48,10 +48,8 @@ spec:
         - --ui-logo=https://github.com/wego-example/podinfo-deploy/raw/logo/weaveicon.png
         env:
         - name: PODINFO_UI_COLOR
-          value: "#008000"
-          #value: "#34577c"
-        - name: FOOBAR
-          value: foo
+          #value: "#008000"
+          value: "#34577c"
         livenessProbe:
           exec:
             command:
