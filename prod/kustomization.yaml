@@ -10,4 +10,4 @@ resources:
 - frontend-hpa.yaml
 - backend-hpa.yaml
 patches:
-- patch.yaml
+- path: patch.yaml
