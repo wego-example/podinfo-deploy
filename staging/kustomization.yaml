@@ -8,4 +8,4 @@ resources:
 - ../services
 - namespace.yaml
 patches:
-- patch.yaml
+- path: patch.yaml
