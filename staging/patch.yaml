@@ -4,7 +4,6 @@ kind: Deployment
 metadata:
   name: frontend
 spec:
-  replicas: 2
   template:
     spec:
       containers:
@@ -12,11 +11,3 @@ spec:
         env:
         - name: PODINFO_UI_COLOR
           value: "#008000"
-
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: backend
-spec:
-  replicas: 2
