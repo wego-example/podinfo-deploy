@@ -13,11 +13,4 @@ spec:
         - name: PODINFO_UI_COLOR
           value: "#008000"
 
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: backend
-spec:
-  replicas: 2
 
