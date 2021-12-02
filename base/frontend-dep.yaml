@@ -44,7 +44,7 @@ spec:
         - --grpc-service-name=podinfo
         - --level=info
         - --random-delay=false
-        - --random-error=true
+        - --random-error=false
         - --ui-logo=https://github.com/wego-example/podinfo-deploy/raw/logo/weaveicon.png
         env:
         - name: PODINFO_UI_COLOR
