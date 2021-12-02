@@ -44,12 +44,12 @@ spec:
         - --grpc-service-name=podinfo
         - --level=info
         - --random-delay=false
-        - --random-error=false
+        - --random-error=true
         - --ui-logo=https://github.com/wego-example/podinfo-deploy/raw/logo/weaveicon.png
         env:
         - name: PODINFO_UI_COLOR
-          value: "#008000"
-          #value: "#34577c"
+          #value: "#008000"
+          value: "#34577c"
         livenessProbe:
           exec:
             command:
