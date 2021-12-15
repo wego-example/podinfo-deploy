@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: podinfo-loadgen
-  namespace: loadtest
 spec:
   replicas: 1
   selector:
@@ -18,4 +17,4 @@ spec:
         image: steveww/podinfo-loadgen:latest
         env:
         - name: LOAD_URL_BASE
-          value: http://frontend.podinfo:9898
+          value: http://frontend:9898
