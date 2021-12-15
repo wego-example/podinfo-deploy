@@ -10,3 +10,4 @@ resources:
 - backend-hpa.yaml
 - frontend-canary.yaml
 - backend-canary.yaml
+- loadgen-dep.yaml
