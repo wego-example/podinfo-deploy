@@ -1,0 +1,17 @@
+name: Magalix
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  magalix:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: Magalix
+      uses: magalixcorp/magalix-action@main
+      with:
+        webhook: ${{ secrets.MAGALIX_HOOK }}
