@@ -7,7 +7,7 @@ spec:
   minReadySeconds: 3
   revisionHistoryLimit: 5
   progressDeadlineSeconds: 60
-  replicas: 2
+  replicas: asdfa
   strategy:
     rollingUpdate:
       maxUnavailable: 0
