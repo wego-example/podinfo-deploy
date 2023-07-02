@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: stefanprodan/podinfo:6.0.0
+        image: "{{ .Values.deployment.image.repository }}:{{ .Values.deployment.image.tag }}"
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
