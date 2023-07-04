@@ -5,7 +5,7 @@ metadata:
   namespace: project1-dev
 spec:
   replicas: {{ .Values.deployment.replicas }}
-  minReadySeconds: 3
+  minReadySeconds: 4
   revisionHistoryLimit: 5
   progressDeadlineSeconds: 60
   strategy:
