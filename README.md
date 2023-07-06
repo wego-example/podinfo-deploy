@@ -5,5 +5,3 @@ This repository contains kubernetes deployment YAMLs for [podinfo](https://githu
 It is designed as a simple example for [Weave GitOps](https://github.com/weaveworks/weave-gitops)
 
 This is a change
-
-
